@@ -60,7 +60,7 @@ How to install Boutique
   FACEBOOK_CLIENT_ID=
   FACEBOOK_CLIENT_SECRET=
 ```
-## 3- Now you are ready to go
+## 3- Now you ready to go
 ```bash
   php artisan ser
   npm run dev (For Development)
