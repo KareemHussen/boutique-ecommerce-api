@@ -9,7 +9,7 @@ Boutique Ecommerce, powered by Laravel, offers a comprehensive API system for se
 ## 👉 TODO 
 - [ ]  Replace ***Pusher*** with ***Reverb*** for real-time updates and notifications.
 - [ ]  Integrate ***payment gateway*** for seamless transactions.
-- [ ]  Refactor code for improved readability and efficiency.
+- [ ]  Refactor code for improved readability and efficiency (Use Service Pattern).
 - [ ]  Optimize queries for enhanced performance.
 
 
