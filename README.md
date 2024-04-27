@@ -1,66 +1,70 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Boutique Ecommerce API
 
-## About Laravel
+Boutique Ecommerce, powered by Laravel, offers a comprehensive API system for seamless online shopping experiences. It encompasses vital features including user authentication, product management, order processing, and payment gateways. Designed for scalability, it caters to businesses of all sizes. With intuitive interfaces and a robust backend, it ensures smooth operations for both customers and administrators. Boutique Ecommerce mirrors real-life ecommerce scenarios, empowering businesses to thrive in the competitive online marketplace.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## 👉 TODO 
+- [ ]  Replace ***Pusher*** with ***Reverb*** for real-time updates and notifications.
+- [ ]  Integrate ***payment gateway*** for seamless transactions.
+- [ ]  Refactor code for improved readability and efficiency.
+- [ ]  Optimize queries for enhanced performance.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 🔥 Features
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- ***Authentication and Authorization*** using Sanctum for secure dashboard and client-side access.
+- ***Implement social login functionality***, enabling users to authenticate via Google and Facebook accounts.
+- ***Add categories and subcategories*** with images for organized product management.
+- ***Products*** with attributes like name, price, discount, sizes, colors, multiple images and etc..
+- Implement product ***rating system*** for user feedback.
+- Enable users to write ***reviews*** for products, enhancing customer engagement and trust.
+- ***Cart management***: Add, update, and delete items, with checkout functionality (payment gateway not yet implemented).
+- ***Flexible shipping***: Adjust shipping prices based on city or country.
+- ***Technical Support***: Assistance for clients encountering system issues.
+- ***Comprehensive statistics***: Tools for easy system management and analysis.
 
-## Laravel Sponsors
+## 🙏 3rd Parties
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- ***Sanctum*** for authentication [https://laravel.com/docs/11.x/sanctum]  
+- ***Spatie Laravel Permission*** [https://spatie.be/docs/laravel-permission/v6/introduction]
+- ***Pusher*** (or Reverb) for real-time updates and notifications [https://pusher.com]
+- ***Spatie Media Library*** [https://spatie.be/docs/laravel-medialibrary/v11/introduction]
+- ***Socialite*** for social login functionality (Google - Facebook)  [https://laravel.com/docs/11.x/socialite]
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
 
-## Contributing
+## Installation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+How to install Boutique
 
-## Code of Conduct
+## 1- Clone the project and install required packages
+```bash
+  git clone https://github.com/KareemHussen/boutique-ecommerce-api.git
+  cd boutique-ecommerce-api
+  composer i
+  npm i
+```
+## 2- Fill the missed data in .env which will be find in .env.example
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+  PUSHER_APP_ID=
+  PUSHER_APP_KEY=
+  PUSHER_APP_SECRET=
 
-## Security Vulnerabilities
+  GOOGLE_CLIENT_ID=
+  GOOGLE_CLIENT_SECRET=
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+  FACEBOOK_CLIENT_ID=
+  FACEBOOK_CLIENT_SECRET=
+```
+## 3- Now you are ready to go
+```bash
+  php artisan ser
+  npm run dev (For Development)
+  npm run build (For Production)
+```
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    
